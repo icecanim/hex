@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0507;
+  --foreground: #f0e6d2;
+
+  /* Bordo Tonları */
+  --bordo-en-koyu: #1a0305;
+  --bordo-koyu: #2a0408;
+  --bordo: #4a0810;
+  --bordo-acik: #6b0d18;
+
+  /* Altın Tonları */
+  --altin-koyu: #8b6914;
+  --altin-orta: #b8860b;
+  --altin: #c9a961;
+  --altin-parlak: #e6c86e;
+
+  /* Metin */
+  --krem: #f0e6d2;
+  --krem-soluk: #b8a889;
+  --metin-soluk: #7a6f5f;
+
+  --siyah: #0a0507;
+  --vurgu: #8b0000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--krem);
+  background: var(--background);
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Font Cinzel */
+.font-cinzel {
+  font-family: var(--font-cinzel), "Cinzel", serif;
+  letter-spacing: 0.05em;
+}
+
+/* Bordo gradient arka plan */
+.bg-loxford {
+  background: linear-gradient(
+    135deg,
+    #0a0507 0%,
+    #1a0305 25%,
+    #2a0408 50%,
+    #1a0305 75%,
+    #0a0507 100%
+  );
+}
+
+/* Altın parıltı */
+.gold-glow {
+  box-shadow: 0 0 20px rgba(201, 169, 97, 0.15);
+}
+
+.gold-glow-strong {
+  box-shadow: 0 0 30px rgba(201, 169, 97, 0.3);
+}
+
+/* Metalik altın gradient (metin için) */
+.text-gold-metallic {
+  background: linear-gradient(
+    135deg,
+    #8b6914 0%,
+    #c9a961 40%,
+    #e6c86e 50%,
+    #c9a961 60%,
+    #8b6914 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Bordo-Altın karışım arka plan */
+.bg-bordo-gradient {
+  background: linear-gradient(135deg, #4a0810 0%, #1a0305 100%);
+}
