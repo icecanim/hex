@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --webpack",
-    "build": "next build --webpack",
-    "start": "next start",
-    "lint": "eslint",
-    "seed": "tsx prisma/seed.ts"
+  "dev": "next dev --webpack",
+  "build": "prisma generate && next build --webpack",
+  "start": "next start",
+  "lint": "eslint",
+  "seed": "tsx prisma/seed.ts",
+  "postinstall": "prisma generate" 
   },
   "dependencies": {
     "@auth/core": "^0.34.2",
